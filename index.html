@@ -1,196 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+<head>
 
-  <head>
-
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lindner Design | Portfolio</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/flavicon.png"/>
-    <title>Lindsay Lindner's portfolio</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom styles for this template -->
-    <link href="css/3-col-portfolio.css" rel="stylesheet">
-    <style>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    .jumbotron {
-      text-align: center;
-      padding-top: 115px;
-      color: white;
-      height: 350px;
-      background-image: url('images/jumbotronportfolio.jpg');
-      background-position: center;
-    }
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-    </style>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
-  </head>
+</head>
 
-  <body>
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi, I'm Lindsay</h1>
-    <p class="lead">Welcome to my Portfolio | Full Stack Coding Bootcamp 2018</p>
-  </div>
-</div>
+<body id="top">
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-      <!-- Page Heading -->
-      <h1 class="my-4"></h1>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Giftastic-API"><img class="card-img-top" src="images/giftastic.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Giftastic-API">Giftastic API</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript, JQuery, API, JSON, AJAX</p>
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <img src="images/logo.png" alt="Homepage">
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Portfolio</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <p>I'm and fulltime graphic and web designer currently in the University of Minnesota Full Stack coding bootcamp. Let's get in touch. Message me <a href="mailto:lindnerdesign@gmail.com" target="_blank">here.</p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="http://linkedin.com/in/lindsay-lindner" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lindnerdesign" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+
+        <!-- <div class="shadow-overlay"></div> -->
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <h1>
+                Hello, I'm <br>
+                Lindsay Lindner.
+                </h1>
+
+                <p>
+                I'm a full stack web development <br>
+                student at the University of Minnesota. <br>
+                This is my portfolio.
+                </p>
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-sidelinks">
+            <li><a class="smoothscroll" href="#services">About<span>who I am</span></a></li>
+            <li><a class="smoothscroll" href="#works">Portfolio<span>my projects</span></a></li>
+            <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
+        </ul> <!-- end home-sidelinks -->
+
+        <ul class="home-social">
+            <li class="home-social-title">Follow Me</li>
+            <li><a href="http://linkedin.com/in/lindsay-lindner" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">Linkedin</span>
+            </a></li>
+            <li><a href="https://github.com/lindnerdesign" target="_blank">
+                <i class="fab fa-github"></i>
+                <span class="home-social-text">GitHub</span>
+            </a></li>
+        </ul> <!-- end home-social -->
+
+        <a href="#services" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a> <!-- end home-scroll -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about me: keep "service" tags
+    ================================================== -->
+    <section id='services' class="s-services light-gray">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Who I am</h3>
+                <h1 class="display-1">I'm and fulltime graphic and web designer currently in the University of Minnesota Full Stack coding bootcamp.</h1>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Train-Scheduler"><img class="card-img-top" src="images/train-scheduler.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Train-Scheduler">Train Scheduler</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript, JQuery, Firebase, Moment.js</p>
+        </div> <!-- end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                I'm currently a graphics and web designer with 12 years experience working in Marketing & Design. My passion is digtial design, working on websites and learning to code.
+                <br><br>
+                I love to learn and problem solve. I gravitate towards new technology which gives me the opportunity to work on challenging projects while contunially developing my skill set.
+                <br><br>
+                I have a background in graphics and web design, photography, videography and maya 3d animation and modeling. My love for web design has lead me in the direction of web development where I strive to contunue down a path where both my design and development skills can come into play.
+                </p>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="images/placeholder.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Group Project O1</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript, JQuery, Firebase, API, JSON, AJAX</p>
+        </div> <!-- end about-desc -->
+
+    </section> <!-- end s-services -->
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Featured Projects</h3>
+                <h1 class="display-1">These are my featured projects from my Full Stack Bootcamp course.</h1>
             </div>
-          </div>
+        </div> <!-- end section-header -->
+
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-project.jpg" class="thumb-link" title="Rails" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg"
+                                     srcset="images/portfolio/project1.jpg 1x, images/portfolio/project1@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Sports Manager - Group Project One
+                            </h3>
+                            <p class="item-folio__cat">
+                                Firebase, Instagram API, Active API, Youtube API, Moment.js & Anime.js
+                            </p>
+                        </div>
+
+                        <a href="https://vdelariva.github.io/Fantastic4/" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p><a href="https://vdelariva.github.io/Fantastic4/" target="_blank">View Full Project Here</a></p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-rail.jpg" class="thumb-link" title="Train Scheduler" data-size="1050x700">
+                                <img src="images/portfolio/rails.jpg"
+                                     srcset="images/portfolio/rails.jpg 1x, images/portfolio/rails@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Train Scheduler
+                            </h3>
+                            <p class="item-folio__cat">
+                                Firebase & Moment.js
+                            </p>
+                        </div>
+
+                        <a href="https://lindnerdesign.github.io/Train-Scheduler/" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                          <p><a href="https://lindnerdesign.github.io/Train-Scheduler/" target="_blank"> View Full Project Here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-meme.jpg" class="thumb-link" title="Giftastic" data-size="1050x700">
+                                <img src="images/portfolio/meme.jpg"
+                                     srcset="images/portfolio/meme.jpg 1x, images/portfolio/meme@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Giftastic
+                            </h3>
+                            <p class="item-folio__cat">
+                                Giphy API
+                            </p>
+                        </div>
+
+                        <a href="https://lindnerdesign.github.io/Giftastic-API" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                          <p><a href="https://lindnerdesign.github.io/Giftastic-API" target="_blank"> View Full Project Here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-hunter.jpg" class="thumb-link" title="Trivia" data-size="1050x700">
+                                <img src="images/portfolio/hunter.jpg"
+                                     srcset="images/portfolio/hunter.jpg 1x, images/portfolio/hunter@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Egg Hunter
+                            </h3>
+                            <p class="item-folio__cat">
+                                Javascript & JQuery
+                            </p>
+                        </div>
+
+                        <a href="https://lindnerdesign.github.io/unit-4-game" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                          <p><a href="https://lindnerdesign.github.io/unit-4-game" target="_blank"> View Full Project Here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-trivia.jpg" class="thumb-link" title="Trivia" data-size="1050x700">
+                                <img src="images/portfolio/trivia.jpg"
+                                     srcset="images/portfolio/trivia.jpg 1x, images/portfolio/trivia@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Donut Trivia
+                            </h3>
+                            <p class="item-folio__cat">
+                                Javascript & JQuery
+                            </p>
+                        </div>
+
+                        <a href="https://lindnerdesign.github.io/TriviaGame/" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                          <p><a href="https://lindnerdesign.github.io/TriviaGame/" target="_blank"> View Full Project Here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-hangman.jpg" class="thumb-link" title="Hangman" data-size="1050x700">
+                                <img src="images/portfolio/hangman.jpg"
+                                     srcset="images/portfolio/hangman.jpg 1x, images/portfolio/hangman@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Hangman Game
+                            </h3>
+                            <p class="item-folio__cat">
+                                Javascript
+                            </p>
+                        </div>
+
+                        <a href="https://lindnerdesign.github.io/Word_Guess_Game/" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                          <p><a href="https://lindnerdesign.github.io/Word_Guess_Game/" target="_blank"> View Full Project Here</a></p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+        </div> <!-- end masonry-wrap -->
+
+
+    </section> <!-- end s-works -->
+
+
+    <!-- stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+
+            <div class="col-block stats__col ">
+                <div class="stats__count">48</div>
+                <h5>Long Nights</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">845</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">4534</div>
+                <h5>Bugs Fixed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">6</div>
+                <h5>Projects Completed</h5>
+            </div>
+
+        </div> <!-- end stats -->
+
+    </section> <!-- end s-stats -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Contact Me</h3>
+                <h1 class="display-1 display-1--light">Lets get in touch. Send me a message, I'd love to hear from you.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+
+            <div class="col-full contact-main" data-aos="fade-up">
+                <p>
+                <a href="mailto:lindnerdesign@gmail.com" class="contact-email">lindnerdesign@gmail.com</a>
+                <span class="contact-number"><a href="https://lindsaylindnerdesign.com">Visit my Graphic Design Portfolio</a></span>
+                </p>
+            </div> <!-- end contact-main -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">My Location</h3>
+
+                <p class="contact-address">
+                    Minneapolis, MN<br>
+                    55426 US
+                </p>
+            </div> <!-- end contact-secondary -->
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Follow Me</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="http://linkedin.com/in/lindsay-lindner" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lindnerdesign" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul> <!-- end contact-social -->
+
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Lindsay Lindner @ lindnerdesign.github.io</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+            </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Word_Guess_Game/"><img class="card-img-top" src="images/hangman.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Word_Guess_Game/">Wild West Word Game</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/unit-4-game/"><img class="card-img-top" src="images/egghunterimage.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/unit-4-game/">Jurassic Egg Collector</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript, JQuery</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/TriviaGame/"><img class="card-img-top" src="images/donutTrivia.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/TriviaGame/">Trivia Game</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap, JavaScript, JQuery</p>
-            </div>
-          </div>
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
         </div>
 
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Basic_Portfolio/"><img class="card-img-top" src="images/basicportfolio.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Basic_Portfolio/">Basic Portfolio</a>
-              </h4>
-              <p class="card-text">HTML/CSS</p>
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Bootstrap-Portfolio/"><img class="card-img-top" src="images/bootstrapportfolio.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Bootstrap-Portfolio/">Bootstrap Portfolio</a>
-              </h4>
-              <p class="card-text">HTML/CSS, Bootstrap</p>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="https://lindnerdesign.github.io/Responsive-Portfolio/"><img class="card-img-top" src="images/basicportfolio.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="https://lindnerdesign.github.io/Responsive-Portfolio/">Responsive Portfolio</a>
-              </h4>
-              <p class="card-text">HTML/CSS</p>
-            </div>
-          </div>
+
         </div>
 
-      </div>
+    </div> <!-- end photoSwipe background -->
 
-      <!-- Pagination -->
-  <!-- <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="https://lindnerdesign.github.io">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-    </ul>-->
 
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Lindsay Lindner Design 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-  </body>
+</body>
 
 </html>
