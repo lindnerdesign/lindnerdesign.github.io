@@ -71,7 +71,7 @@ html, body {
 
 body {
   background: #111111;
-  font-family: "metropolis-regular", sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -107,7 +107,7 @@ a:active {
  * 
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "metropolis-semibold", sans-serif;
+  font-family:'Montserrat', sans-serif;
   color: #000000;
   font-style: normal;
   font-weight: normal;
